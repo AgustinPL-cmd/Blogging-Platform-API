@@ -9,3 +9,4 @@ Template for a roadmap-project
 |Usuario|Repositorio| Documentación |
 |-------|-----------|---------|
 | <a href="https://github.com/EGAMAGZ">EGAMAGZ</a> |<a href="https://github.com/EGAMAGZ/Blogging-Platform-API">Repositorio</a> | N/A |
+| <a href="https://github.com/AgustinPL-cmd">Agus</a> |<a href="https://github.com/AgustinPL-cmd/Blogging-Platform-API">Repositorio</a> | N/A |
