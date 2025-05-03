@@ -1,5 +1,6 @@
 package com.binaryBrains.bloggin.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -30,7 +31,7 @@ public class BlogModel {
     @Column(name = "fh_last_update", nullable = false)
     private LocalDateTime lastUpdate;
 
-    @OneToMany(mappedBy = "blog")
+    @OneToMany(mappedBy = "blog", cascade = CascadeType.REMOVE)
     private List<Blog_TagModel> blogTags;
 
     // Getters and Setters

@@ -44,7 +44,7 @@ public class CategoryController {
             return "Category with id: "+id+" deleted";
         }
         else{
-            return "Error, we have a problem. ";
+            return "Error, we have a problem.";
         }
 
     }

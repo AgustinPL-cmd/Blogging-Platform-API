@@ -1,4 +1,6 @@
 package com.binaryBrains.bloggin.models;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -15,6 +17,7 @@ public class CategoryModel {
     private String name;
 
     @OneToMany(mappedBy = "category")
+    @JsonIgnore
     private List<BlogModel> blogs;
 
     // Getters and Setters

@@ -15,7 +15,7 @@ public class TagModel {
     @Column(name = "tx_name", nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "tag")
+    @OneToMany(mappedBy = "tag", cascade = CascadeType.REMOVE)
     private List<Blog_TagModel> blogTags;
 
     // Getters and Setters
